@@ -107,7 +107,7 @@ export default function HomeScreen() {
             });
           }}
           query={{
-            key: "AIzaSyCA6ZQ9ziP5O5b463IDyoEWTDq1f96xVBU",
+            key: "",
             language: "en",
             components: "country:LK",
             types: "address",
