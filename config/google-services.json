@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678776228284",
+    "project_id": "checkthat-fc041",
+    "storage_bucket": "checkthat-fc041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678776228284:android:fa8b387f37d1bcf321c3b9",
+        "android_client_info": {
+          "package_name": "com.CheckThat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678776228284-rm22vfa06o8jpt9c67n0cce2oqck2s0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBad9L1kJXXSnY7FqvVHFaM37VSrtDf33c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678776228284-rm22vfa06o8jpt9c67n0cce2oqck2s0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
