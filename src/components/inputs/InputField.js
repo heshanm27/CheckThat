@@ -20,9 +20,10 @@ const InputField = ({ label, iconName, error, password, placeholder, onFocus = (
         <Icon
           name={iconName}
           style={{
+            fontSize: 20,
+            marginRight: 10,
             color: error ? COLORS.error : isFocused ? COLORS.accent : COLORS.text_grey,
           }}
-          className="text-2xl mr-3 "
         />
         <TextInput
           autoCorrect={false}
@@ -37,7 +38,12 @@ const InputField = ({ label, iconName, error, password, placeholder, onFocus = (
           {...props}
         />
         {password && (
-          <Icon onPress={() => setHidePassword(!hidePassword)} name={hidePassword ? "eye-outline" : "eye-off-outline"} className="text-text-grey text-2xl" />
+          <Icon
+            onPress={() => setHidePassword(!hidePassword)}
+            name={hidePassword ? "eye-outline" : "eye-off-outline"}
+            style={{ color: COLORS.text_grey, fontSize: 20 }}
+            className="text-text-grey text-2xl"
+          />
         )}
       </View>
       {error && <Text className="mt-2 text-red-500 text-lg">{error}</Text>}

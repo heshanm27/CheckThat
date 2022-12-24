@@ -7,39 +7,40 @@ import { FONTS } from "../../assets/constant/theme";
 import InputField from "../components/inputs/InputField";
 import { FacebookIcon, GoogleIcon, TwitterIcon } from "../../assets/svg/Icons";
 
-const SignInScreen = () => {
+const SignInScreen = ({ navigation }) => {
   return (
-    <SafeAreaView className="flex-1  dark:bg-bg-dark justify-between">
-      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-        <View className="scale-50 -m-10 ">
+    <SafeAreaView className="flex-1  dark:bg-slate-800 justify-between">
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }}>
+        <View className="scale-50 -m-16 ">
           <SvgImage />
         </View>
 
-        <View className=" flex-1 p-5 justify-center dark:bg-bg-light rounded-t-3xl">
-          <View className="flex-1 justify-between">
+        <View className=" flex-1 p-5 justify-end dark:bg-bg-light rounded-t-3xl">
+          <View className="flex-1">
             <Text style={{ fontFamily: FONTS.bold }} className="text-text-grey text-4xl break-before-left">
               Welcome Back !
             </Text>
           </View>
-          <View className="flex-1 justify-between ">
+          <View className="flex-1">
             <InputField error={false} iconName="email-outline" label="Email" inputType="email-address" place />
             <InputField error={false} iconName="lock-outline" label="Password" inputType="pass" password />
 
             <RoundedButton onPress={() => {}} title="Sign In" />
+          </View>
+          <View>
             <Text className="text-center mb-2">OR</Text>
           </View>
-
-          <View className="flex-row justify-around">
+          <View className=" flex-1 flex-row justify-around">
             <CircleButton icon={<FacebookIcon width={36} height={36} />} />
             <CircleButton icon={<GoogleIcon width={36} height={36} />} />
             <CircleButton icon={<TwitterIcon width={36} height={36} />} />
           </View>
 
-          <View className="flex-row justify-center items-baseline mt-4">
+          <View className="flex-row justify-center items-baseline ">
             <Text style={{ fontFamily: FONTS.regular }} className="text-center ">
               Don't Have an Account?{" "}
             </Text>
-            <MakePressable handlePress={() => navigation.navigate("signin")}>
+            <MakePressable handlePress={() => navigation.navigate("signup")}>
               <Text style={{ fontFamily: FONTS.bold }} className=" text-indigo-500   ">
                 Sign Up
               </Text>
